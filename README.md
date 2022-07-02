@@ -1,24 +1,8 @@
-# crafty-furniture
+# Crafty Furniture App
 
-## Project setup
-```
-npm install
-```
+Stack : 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1. Vue 3 CLI
+2. Tailwind CSS
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## App Design

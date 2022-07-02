@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Google - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+   .body {
+      @apply font-inter;
+   }
+   .container {
+      @apply px-3;
+   }
+
+   .nav-menu {
+      @apply text-sm flex items-center flex-col px-5 py-3 text-sub_text;
+   }
+
+   .nav-menu .icon {
+      @apply text-3xl;
+   }
+
+   .active {
+      @apply text-primary;
+   }
+
+   .exact-active-link {
+      @apply text-primary;
+   }
+}
