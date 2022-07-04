@@ -1,6 +1,6 @@
 <template>
    <div class="max-w-sm container relative min-h-screen bg-[#eaeaea]">
-      <nav class="absolute inset-x-0 bottom-0 bg-white">
+      <nav class="max-w-sm mx-auto fixed inset-x-0 bottom-0 bg-white">
          <div class="flex items-center justify-around">
             <router-link active-class="active-link" exact-active-class="exact-active-link" class="nav-menu" to="/">
                <i class="icon bx bx-home-smile"></i>
@@ -20,7 +20,7 @@
             </router-link>
          </div>
       </nav>
-      <router-view></router-view>
+      <router-view class="pb-24"></router-view>
    </div>
 </template>
 

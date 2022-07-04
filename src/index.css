@@ -10,7 +10,7 @@
       @apply font-inter;
    }
    .container {
-      @apply px-3;
+      @apply px-[0.4rem];
    }
 
    .nav-menu {
@@ -27,5 +27,19 @@
 
    .exact-active-link {
       @apply text-primary;
+   }
+}
+
+@layer components {
+   .product-title {
+      @apply font-semibold text-base;
+   }
+
+   .product-price {
+      @apply text-[#F2A666] font-medium text-sm mt-1;
+   }
+
+   .product-store {
+      @apply text-xs font-light text-sub_text;
    }
 }

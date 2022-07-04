@@ -25,11 +25,11 @@ const routes = [
       name: "user",
       component: UserView
    },
-   // {
-   //    path: "/favorite",
-   //    name: "favorite",
-   //    component: () => import("../views/FavoriteView.vue"),
-   // },
+   {
+      path: "/popular",
+      name: "popular",
+      component: () => import("../views/PopularView.vue"),
+   },
 ];
 
 const router = createRouter({

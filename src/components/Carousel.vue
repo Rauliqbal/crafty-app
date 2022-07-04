@@ -1,8 +1,8 @@
 <template>
 	<h2 class="mb-4 text-lg capitalize font-semibold">Special offers</h2>
-	<swiper :spaceBetween="30" :pagination="true" :modules="modules" class="mySwiper">
+	<swiper :spaceBetween="30" :autoplay="{delay: 2500, disableOnInteraction: false,}" :pagination="{clickable: true,}" :modules="modules" class="mySwiper">
 		<swiper-slide class="rounded-2xl overflow-hidden">
-			<img class="relative" src="../assets/images/carousel_1.svg">
+			<img class="relative" src="assets/images/carousel_1.svg">
 			<div class="absolute inset-0 w-full h-full bg-[#101817]/30 p-5">
 				<div>
 					<h3 class="text-2xl font-semibold text-white">25% Discount</h3>
@@ -13,7 +13,7 @@
 		</swiper-slide>
 
 		<swiper-slide class="rounded-2xl overflow-hidden">
-			<img class="relative" src="../assets/images/carousel_2.svg">
+			<img class="relative" src="assets/images/carousel_2.svg">
 			<div class="absolute inset-0 w-full h-full bg-[#101817]/30 p-5">
 				<div>
 					<h3 class="text-2xl font-semibold text-white">35% Discount</h3>
@@ -31,7 +31,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 export default {
 	name: "Carousel",
@@ -42,7 +42,7 @@ export default {
 
 	setup() {
 		return {
-			modules: [Pagination],
+			modules: [Pagination, Autoplay],
 		};
 	},
 };
