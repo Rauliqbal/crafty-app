@@ -1,9 +1,13 @@
 <template>
    <div class="container pt-3">
-      <form class="flex items-center relative text-sub_text mb-6">
+      <Navbar/>
+     
+      <router-link to="/search" class="flex items-center relative text-sub_text mb-6">
          <i class="bx bx-search text-3xl absolute pl-4"></i>
-         <input class="py-3 pl-14 pr-4 w-full rounded-xl outline-none text-black" type="search" name="search" placeholder="Search Furniture" />
-      </form>
+         <input v-model="search" @keyup="searchProduct" class="py-3 pl-14 pr-4 w-full rounded-xl outline-none text-black" type="search" name="search" placeholder="Search Furniture" />
+        
+      </router-link>
+      
 
       <Carousel />
 
@@ -28,13 +32,14 @@
 <script>
 import axios from "axios";
 
+import Navbar from "../components/Navbar.vue";
 import Carousel from "../components/Carousel.vue";
 import CardProduct from "../components/CardProduct.vue";
 import CardPopular from "../components/CardPopular.vue";
 
 export default {
    name: "HomeView",
-   components: { Carousel, CardProduct, CardPopular },
+   components: { Carousel, CardProduct, CardPopular, Navbar },
 
    data() {
       return {

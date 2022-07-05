@@ -1,6 +1,6 @@
 <template>
 	<h2 class="mb-4 text-lg capitalize font-semibold">Special offers</h2>
-	<swiper :spaceBetween="30" :autoplay="{delay: 2500, disableOnInteraction: false,}" :pagination="{clickable: true,}" :modules="modules" class="mySwiper">
+	<swiper :spaceBetween="30" :autoplay="{delay: 3500, disableOnInteraction: false,}" :pagination="{clickable: true,}" :modules="modules" class="mySwiper">
 		<swiper-slide class="rounded-2xl overflow-hidden">
 			<img class="relative" src="assets/images/carousel_1.svg">
 			<div class="absolute inset-0 w-full h-full bg-[#101817]/30 p-5">
@@ -47,9 +47,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="css" scoped>
-	.swiper-pagination-bullet-active {
-		background: #0c8a7b !important;
-	}
-</style>

@@ -9,11 +9,11 @@
 					<h4 class="product-title">{{popular.title}}</h4>
 					<h5 class="product-store">{{popular.store}}</h5>
 				</div>
-				<h6 class="product-price">{{popular.price}}</h6>
+				<h6 class="product-price">Rp. {{popular.price}}</h6>
 			</div>
-			<a href="" class="bg-primary p-2 w-8 h-8 text-white text-base inline-flex rounded-full ml-auto">
+			<router-link :to="'/popular/' + popular.id" class="bg-primary p-2 w-10 h-10 text-white text-2xl inline-flex rounded-full ml-auto">
             	<i class="bx bx-shopping-bag"></i>
-         	</a>
+         </router-link>
 		</div>
 	</div>
 </template>

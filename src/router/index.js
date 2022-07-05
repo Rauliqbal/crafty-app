@@ -3,6 +3,8 @@ import HomeView from "../views/HomeView.vue";
 import FavoriteView from "../views/FavoriteView.vue";
 import CartView from "../views/CartView.vue";
 import UserView from "../views/UserView";
+import ProductDetail from "../views/ProductDetail.vue";
+import SearchView from "../views/SearchView.vue";
 
 const routes = [
    {
@@ -18,12 +20,20 @@ const routes = [
    {
       path: "/cart",
       name: "cart",
-      component: CartView ,
+      component: CartView,
    },
    {
       path: "/user",
       name: "user",
-      component: UserView
+      component: UserView,
+   },
+   {
+      path: "/product/:id",
+      component: ProductDetail,
+   },
+   {
+      path: "/search",
+      component: SearchView,
    },
    {
       path: "/popular",
