@@ -40,7 +40,7 @@
    }
 
    .product-price {
-      @apply text-[#F2A666] font-medium text-sm mt-1;
+      @apply text-[#F2A666] font-medium text-base mt-1;
    }
 
    .product-detail .product-price {
@@ -55,7 +55,5 @@
       @apply text-base text-sub_text leading-relaxed;
    }
 
-   .swiper-pagination-bullets {
-      @apply bottom-0 static !important;
-   }
+   
 }
