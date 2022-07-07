@@ -79,6 +79,10 @@
          </button>
       </div>
 
+      <div v-else>
+         Home
+      </div>
+
    </div>
 </template>
 
@@ -130,8 +134,6 @@ export default {
          return this.carts.reduce(function (items, data) {
             return items + data.products.price * data.order_quantity;
          }, 0);
-
-         return this.order_quantity.replace(".",",");
       },
    },
 };
