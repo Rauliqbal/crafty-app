@@ -36,9 +36,9 @@ const routes = [
       component: SearchView,
    },
    {
-      path: "/popular",
-      name: "popular",
-      component: () => import("../views/PopularView.vue"),
+      path: "/popular/:id",
+      name: "PopularDetail",
+      component: () => import("../views/PopularDetail.vue"),
    },
 ];
 

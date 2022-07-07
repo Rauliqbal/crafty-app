@@ -80,7 +80,7 @@ export default {
 
    mounted() {
       axios
-         .get("https://api-crafty-app.herokuapp.com/products/" + this.$route.params.id)
+         .get("https://api-crafty-app.herokuapp.com/populars/" + this.$route.params.id)
          .then((response) => this.setProduct(response.data))
          .catch((error) => console.log(error));
    },
